@@ -1,11 +1,13 @@
+
 .price-list {
-  scrollbar-width: auto;           /* Firefox */
-  -webkit-overflow-scrolling: touch; /* Melhora Safari */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  background-color: rgba(255, 255, 255, 0.01); /* ativa scrollbar */
 }
 
 @supports (-webkit-touch-callout: none) {
   .price-list {
-    overflow-y: scroll !important; 
+    overflow-y: scroll !important;
   }
 }
 
