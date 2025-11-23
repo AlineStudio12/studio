@@ -1,5 +1,13 @@
 import './Certifications.css'
 import { useState } from 'react'
+import cert1 from '../img/certificado1.jpeg'
+import cert2 from '../img/certificado2.png'
+import cert3 from '../img/certificado3.jpeg'
+
+import aula1 from '../img/aula.jpeg'
+import aula2 from '../img/aula2.png'
+import aula3 from '../img/aula3.png'
+
 
 export default function Certifications() {
   const [selectedCert, setSelectedCert] = useState(null)
@@ -11,7 +19,7 @@ export default function Certifications() {
       issuer: 'Instituto de Beleza Brasil',
       year: '2022',
       description: 'Especialização em aplicação de fibra de vidro premium, designs avançados e técnicas de alongamento.',
-      image: '/src/img/certificado1.jpeg'
+      image: cert1
     },
     {
       id: 2,
@@ -19,7 +27,7 @@ export default function Certifications() {
       issuer: 'Academia de Beleza Luxe',
       year: '2023',
       description: 'Especialização em aplicação de Molde F1 premium, designs avançados e técnicas de alongamento.',
-      image: '/src/img/certificado2.png'
+      image: cert2
     },
     {
       id: 3,
@@ -27,8 +35,8 @@ export default function Certifications() {
       issuer: 'Ministério da Saúde - Certificado',
       year: '2023',
       description: 'Treinamento completo em Aperfeiçoamento na TIPS, Técnicas de aplicação e cuidados profissionais.',
-      image: '/src/img/certificado3.jpeg'
-    },
+      image: cert3
+    }
     // {
     //   id: 4,
     //   title: 'Atendimento ao Cliente e Profissionalismo',
@@ -39,25 +47,24 @@ export default function Certifications() {
     //   image: 'https://via.placeholder.com/400x300?text=Certificado+Atendimento'
     // }
   ]
-
   const aulas = [
     {
       id: 1,
       title: 'Treinamento - Design de Sobrancelha',
       date: 'Ferreiro 2025',
-      image: '/src/img/aula.jpeg'
+      image: aula1
     },
     {
       id: 2,
       title: 'Workshop - Designs Avançados',
       date: 'Outubro 2025',
-      image: '/src/img/aula2.png'
+      image: aula2
     },
     {
       id: 3,
       title: 'Treinamento - Design de Nail design',
       date: 'Setembro 2025',
-      image: '/src/img/aula3.png'
+      image: aula3
     }
     // {
     //   id: 4,
@@ -101,7 +108,7 @@ export default function Certifications() {
             <div className="highlight-content">
               <h3>Comprometimento com a Excelência</h3>
               <p>
-                Mantenho-me sempre atualizada com os últimos trends e técnicas do mercado de beleza, 
+                Mantenho-me sempre atualizada com os últimos trends e técnicas do mercado de beleza,
                 realizando cursos de especialização contínua para oferecer o melhor serviço aos clientes.
               </p>
               <ul className="highlight-list">
