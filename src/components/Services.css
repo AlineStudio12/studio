@@ -1,8 +1,25 @@
 
 .price-list {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  background-color: rgba(255, 255, 255, 0.01); /* ativa scrollbar */
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.price-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.price-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.price-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.price-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 @supports (-webkit-touch-callout: none) {
