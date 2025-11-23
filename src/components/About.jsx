@@ -17,7 +17,7 @@ export default function About() {
               Acredito que cada detalhe faz diferença e me dedico a oferecer o melhor atendimento possível.
             </p>
 
-            <div className="about-stats">
+            {/* <div className="about-stats">
               <div className="stat">
                 <h3>200+</h3>
                 <p>Clientes Satisfeitos</p>
@@ -30,7 +30,7 @@ export default function About() {
                 <h3>500+</h3>
                 <p>Designs Criados</p>
               </div>
-            </div>
+            </div> */}
 
             <div className="about-skills">
               <h3>Especialidades</h3>
