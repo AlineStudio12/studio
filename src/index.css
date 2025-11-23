@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #2d2d2d;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f7f5 100%);
+  min-height: 100vh;
+  letter-spacing: 0.3px;
+}
+
+/* Cores principais - Design moderno */
+:root {
+  --primary: #c9915d;
+  --primary-light: #d9a86e;
+  --primary-dark: #b87d4a;
+  --secondary: #e8d4c0;
+  --accent: #f5ede3;
+  --dark: #2d2d2d;
+  --light: #ffffff;
+  --gray: #6b6b6b;
+  --gray-light: #e0e0e0;
+  --beige-light: #f8f7f5;
+  --beige-dark: #e8dcd0;
+  --success: #4caf50;
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Fonte elegante estilo época */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.elegant-text {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Animações modernas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(201, 145, 93, 0);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(201, 145, 93, 0.3);
+  }
+}
