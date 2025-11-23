@@ -1,3 +1,14 @@
+.price-list {
+  scrollbar-width: auto;           /* Firefox */
+  -webkit-overflow-scrolling: touch; /* Melhora Safari */
+}
+
+@supports (-webkit-touch-callout: none) {
+  .price-list {
+    overflow-y: scroll !important; 
+  }
+}
+
 .services {
   background: linear-gradient(135deg, #ffffffcf 0%, #d1d0cd 100%);
   padding: 100px 0;
