@@ -16,24 +16,24 @@ export default function Certifications() {
     {
       id: 1,
       title: 'PROFISSIONAL - Aperfeiçoamento na Fibra de Vidro',
-      issuer: 'Instituto de Beleza Brasil',
-      year: '2022',
+      issuer: 'Nails Pro Academy',
+      year: '2024',
       description: 'Especialização em aplicação de fibra de vidro premium, designs avançados e técnicas de alongamento.',
       image: cert1
     },
     {
       id: 2,
       title: 'Curso - Molde F1',
-      issuer: 'Academia de Beleza Luxe',
-      year: '2023',
+      issuer: 'Nails Pro Academy',
+      year: '2024',
       description: 'Especialização em aplicação de Molde F1 premium, designs avançados e técnicas de alongamento.',
       image: cert2
     },
     {
       id: 3,
       title: 'Aperfeiçoamento na TIPS',
-      issuer: 'Ministério da Saúde - Certificado',
-      year: '2023',
+      issuer: 'Nails Pro Academy',
+      year: '2024',
       description: 'Treinamento completo em Aperfeiçoamento na TIPS, Técnicas de aplicação e cuidados profissionais.',
       image: cert3
     }

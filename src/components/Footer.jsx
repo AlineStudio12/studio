@@ -53,13 +53,13 @@ export default function Footer() {
           <div className="footer-section">
             <h3>Redes Sociais</h3>
             <div className="social-icons">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+              <a href="https://www.instagram.com/alinesantana_studio_?igsh=MTg5cmIycTRrM3Uxbw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
                 <InstagramIcon />
               </a>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp">
+              <a href="https://wa.me/5581981919421?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20consulta!" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp">
                 <WhatsAppIcon />
               </a>
-              <a href="mailto:seu@email.com" title="Email" aria-label="Email">
+              <a href="mailto:alinesantana.studio@gmail.com" title="Email" aria-label="Email">
                 <EmailIcon />
               </a>
             </div>

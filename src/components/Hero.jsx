@@ -11,7 +11,10 @@ export default function Hero() {
         <p className="hero-description">
           Transforme sua beleza com técnicas profissionais e produtos de qualidade premium
         </p>
-        <button className="hero-btn">Agendar Consulta</button>
+        <a href="https://wa.me/5581981919421?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20consulta!" target="_blank" rel="noopener noreferrer">
+          <button className="hero-btn">Agendar Consulta</button>
+        </a>
+
       </div>
 
       <div className="hero-shapes">
