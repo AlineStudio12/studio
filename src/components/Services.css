@@ -357,7 +357,7 @@
 
 @media (max-width: 768px) {
   .price-value {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   .services-grid {
