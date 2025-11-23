@@ -80,13 +80,15 @@ export default function Services() {
                 <div className="service-card-back">
                   <div className="price-container">
                     <h4> Tabela de Preços </h4>
-                    <div className="price-list">
-                      {service.prices.map((item, idx) => (
-                        <div key={idx} className={`price-item ${!item.price ? 'price-category' : ''}`}>
-                          <span className="price-name">{item.name}</span>
-                          {item.price && <span className="price-value">{item.price}</span>}
-                        </div>
-                      ))}
+                    <div className="scroll-wrapper">
+                      <div className="price-list">
+                        {service.prices.map((item, idx) => (
+                          <div key={idx} className={`price-item ${!item.price ? 'price-category' : ''}`}>
+                            <span className="price-name">{item.name}</span>
+                            {item.price && <span className="price-value">{item.price}</span>}
+                          </div>
+                        ))}
+                      </div>
                     </div>
                     <button className="service-btn" onClick={() => toggleFlip(service.id)}>
                       ← Voltar
