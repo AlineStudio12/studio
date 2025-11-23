@@ -1,7 +1,11 @@
-
-.price-list {
+.scroll-wrapper {
   max-height: 320px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.price-list {
+  overflow: visible !important; /* não deve ter overflow */
 }
 
 .price-list::-webkit-scrollbar {
