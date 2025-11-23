@@ -60,7 +60,7 @@ export default function Contact() {
 
             <div className="social-links">
               <a href="https://www.instagram.com/alinesantana_studio_?igsh=MTg5cmIycTRrM3Uxbw%3D%3D&utm_source=qr" className="social-btn">Instagram</a>
-              <a href="https://wa.me/5581981919421?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20consulta!" className="social-btn">WhatsApp</a>
+              <a href="https://wa.me/5581981919421?text=Ol%C3%A1%2C%20quero%20agendar%20meu%20horário!" className="social-btn">WhatsApp</a>
               <p><a href="mailto:alinesantana.studio@gmail.com" className="social-btn">Email</a></p>
             </div>
           </div>

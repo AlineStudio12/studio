@@ -356,8 +356,8 @@
 }
 
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 42px;
+  .price-value {
+    font-size: 18px;
   }
 
   .services-grid {
