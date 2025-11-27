@@ -3,6 +3,7 @@ import { useState } from 'react'
 import cert1 from '../img/certificado1.jpeg'
 import cert2 from '../img/certificado2.png'
 import cert3 from '../img/certificado3.jpeg'
+import cert4 from '../img/certificado4.jpeg'
 
 import aula1 from '../img/aula.jpeg'
 import aula2 from '../img/aula2.png'
@@ -36,16 +37,15 @@ export default function Certifications() {
       year: '2024',
       description: 'Treinamento completo em Aperfeiçoamento na TIPS, Técnicas de aplicação e cuidados profissionais.',
       image: cert3
+    },
+    {
+      id: 4,
+      title: 'AEROGRAFIA 1.0 - Técnicas e Aplicações',
+      issuer: 'ONEAIR Cursos',
+      year: '2025',
+      description: 'Curso intensivo em Aerografia, incluindo técnicas básicas, avançadas e aplicações criativas.',
+      image: cert4
     }
-    // {
-    //   id: 4,
-    //   title: 'Atendimento ao Cliente e Profissionalismo',
-    //   issuer: 'Centro de Desenvolvimento Profissional',
-    //   year: '2022',
-    //   description: 'Formação em excelência no atendimento, comunicação e gestão de relacionamento com clientes.',
-    //   icon: '💼',
-    //   image: 'https://via.placeholder.com/400x300?text=Certificado+Atendimento'
-    // }
   ]
   const aulas = [
     {
@@ -66,12 +66,6 @@ export default function Certifications() {
       date: 'Setembro 2025',
       image: aula3
     }
-    // {
-    //   id: 4,
-    //   title: 'Demonstração - Produtos Premium',
-    //   date: 'Agosto 2025',
-    //   image: 'https://via.placeholder.com/400x300?text=Demo+Produtos'
-    // }
   ]
 
   return (
