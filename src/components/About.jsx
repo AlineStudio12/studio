@@ -9,7 +9,7 @@ export default function About() {
           <div className="about-content">
             <h2>Sobre Mim</h2>
             <p>
-              Olá! Sou Aline, uma nail designer apaixonada pela arte e beleza. Com mais de 4 anos de experiência no mercado, 
+              Olá! Sou Aline, uma nail designer apaixonada pela arte e beleza. Com mais de 3 anos de experiência no mercado, 
               desenvolvei uma paixão genuína por transformar as mãos e o olhar das minhas clientes.
             </p>
             <p>
