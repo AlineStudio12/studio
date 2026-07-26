@@ -38,6 +38,20 @@ export default function Services() {
         { name: 'Design com Henna', price: 'R$ 35,00' }
       ]
     }
+    ,
+    {
+      id: 3,
+      icon: icon1,
+      title: 'Spa dos Pés',
+      description: 'Relaxamento, cuidado e bem-estar para você!',
+      features: ['Escalda-pés relaxante', 'Esfoliação + Hidratação', 'Espuma de gelatina relaxante', 'Produtos premium'],
+      prices: [
+        { name: 'Escalda-pés (Relaxante)', price: 'R$ 10,00' },
+        { name: 'Esfoliação dos Pés', price: 'R$ 10,00' },
+        { name: 'Espuma de Gelatina + Esfoliação + Hidratação', price: 'R$ 25,00' },
+        { name: 'Spa dos Pés Premium (Com ervas + Escalda-pés + Gelatina + Esfoliação + Hidratação)', price: 'R$ 45,00' }
+      ]
+    }
   ]
 
   const toggleFlip = (id) => {

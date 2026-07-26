@@ -4,14 +4,23 @@ import cert1 from '../img/certificado1.jpeg'
 import cert2 from '../img/certificado2.png'
 import cert3 from '../img/certificado3.jpeg'
 import cert4 from '../img/certificado4.jpeg'
-
+import cert5 from '../img/certificado5.jpeg'
+import cert6 from '../img/certificado6.jpeg'
+import cert7 from '../img/certificado7.jpeg'
+import cert8 from '../img/certificado8.jpeg'
+import cert9 from '../img/certificado9.jpeg'
+import cert10 from '../img/certificado10.jpeg'
 import aula1 from '../img/aula.jpeg'
 import aula2 from '../img/aula2.png'
 import aula3 from '../img/aula3.png'
+import aula5 from '../img/aula5.png'
+import aula6 from '../img/aula6.png'
+import aula7 from '../img/aula7.png'
 
 
 export default function Certifications() {
   const [selectedCert, setSelectedCert] = useState(null)
+  const [showAll, setShowAll] = useState(false)
 
   const certifications = [
     {
@@ -45,6 +54,54 @@ export default function Certifications() {
       year: '2025',
       description: 'Curso intensivo em Aerografia, incluindo técnicas básicas, avançadas e aplicações criativas.',
       image: cert4
+    },
+    {
+      id: 5,
+      title: 'CURSO - Design de Sobrancelha',
+      issuer: 'Elisa Nascimento',
+      year: '2026',
+      description: 'Especialização em técnicas em design de sobrancelha, incluindo modelagem, coloração e cuidados estéticos.',
+      image: cert5
+    },
+    {
+      id: 6,
+      title: 'Especialização - Spar dos Pés',
+      issuer: 'Potente Cosméticos',
+      year: '2026',
+      description: 'Especialização em Spar dos Pés, incluindo técnicas avançadas e produtos premium.',
+      image: cert6
+    },
+    {
+      id: 7,
+      title: 'Especialização - Alogamento de unha ',
+      issuer: 'Potente Cosméticos',
+      year: '2024',
+      description: 'Especialização em design de nail design, incluindo técnicas avançadas e alongamento.',
+      image: cert7
+    },
+    {
+      id: 8,
+      title: 'CURSO - Alongamento de unha em gel em gel na TIP e Fibra de vidro',
+      issuer: 'Camila madruga',
+      year: '2025',
+      description: 'Especialização em técnicas de alongamento de unha em gel na TIP e Fibra de vidro, incluindo designs modernos e produtos premium.',
+      image: cert8
+    },
+    {
+      id: 9,
+      title: 'Workshop - Alongamento com naturalidade e durabilidade',
+      issuer: 'Camila madruga',
+      year: '2024',
+      description: 'Especialização em cuidados com a pele, incluindo técnicas avançadas e produtos premium.',
+      image: cert9
+    },
+    {
+      id: 10,
+      title: 'CURSO -nail design inicaante',
+      issuer: 'Alice Rodrigues',
+      year: '2023',
+      description: 'Especialização em técnicas de corte, incluindo designs modernos e produtos premium.',
+      image: cert10
     }
   ]
   const aulas = [
@@ -65,6 +122,24 @@ export default function Certifications() {
       title: 'Treinamento - Design de Nail design',
       date: 'Setembro 2025',
       image: aula3
+    },
+    {
+      id: 4,
+      title: 'Workshop - Técnicas Avançadas de design de sobrancelha',
+      date: 'Novembro 2025',
+      image: aula5
+    },
+    {
+      id: 5,
+      title: 'Treinamento - Técnicas de Alongamento da Potente Cosméticos',
+      date: 'Abril 2026',
+      image: aula6
+    },
+    {
+      id: 6,
+      title: 'Workshop - Design de Unhas com aerógrafo',
+      date: 'Fevereiro 2026',
+      image: aula7
     }
   ]
 
@@ -76,7 +151,7 @@ export default function Certifications() {
           <p className="section-subtitle">Formação profissional contínua e especializada</p>
 
           <div className="certifications-grid">
-            {certifications.map((cert) => (
+            {certifications.slice(0, showAll ? certifications.length : 6).map((cert) => (
               <div key={cert.id} className="certification-card" onClick={() => setSelectedCert(cert)}>
                 <div className="cert-image-wrapper">
                   <img src={cert.image} alt={cert.title} className="cert-image" />
@@ -97,6 +172,16 @@ export default function Certifications() {
               </div>
             ))}
           </div>
+          {certifications.length > 6 && (
+            <div className="certifications-actions">
+              <button
+                className="button-secondary"
+                onClick={() => setShowAll((prev) => !prev)}
+              >
+                {showAll ? 'Ver menos' : 'Ver mais certificados'}
+              </button>
+            </div>
+          )}
 
           <div className="certifications-highlight">
             <div className="highlight-content">

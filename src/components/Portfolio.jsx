@@ -6,6 +6,8 @@ import u3 from '../img/u3.jpeg'
 import u4 from '../img/u4.jpeg'
 import u5 from '../img/u5.jpeg'
 import u6 from '../img/u6.jpeg'
+import u11 from '../img/u7.jpeg'
+import u12 from '../img/u12.jpeg'
 import s1 from '../img/s1.jpeg'
 import s2 from '../img/s2.jpeg'
 import s3 from '../img/s3.jpeg'
@@ -84,10 +86,24 @@ export default function Portfolio() {
     {
       id: 10,
       category: 'gel',
-      title: 'Arte Abstrata no F1',
+      title: 'Esmaltação em Gel',
       image: u6,
-      description: 'Traços finos, pontinhos ou desenhos delicados em tons preto e dourado.'
+      description: 'Esmaltação em gel com acabamento impecável.'
     },
+    {
+      id: 11,
+      category: 'gel',
+      title: 'Alongamento em Gel',
+      image: u11,
+      description: 'Alongamento em gel com acabamento impecável.'
+    },
+    {
+      id: 12,
+      category: 'gel',
+      title: 'Design de Unhas',
+      image: u12,
+      description: 'Design personalizado para unhas em gel.'
+    }
   ]
 
   const filtered = filter === 'all' 
